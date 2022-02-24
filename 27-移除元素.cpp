@@ -4,9 +4,9 @@ public:
         int fast = 0,slow = 0;
         for(;fast<nums.size();fast++){
             if(val != nums[fast]){
-                nums[slow++] = nums[fast];//快慢指针值得注意 
+                nums[slow++] = nums[fast];
             }
         }
-        return fast;
+        return slow;
     }
 };
